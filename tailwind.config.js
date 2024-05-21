@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      "--gradient1" : "ffecd2",
+      "--gradient2" : "#fcb69f",
+    },
   },
-  plugins: [],
+  daisyui:{
+    themes:[
+      {
+        light : {
+          ...require("daisyui/src/theming/themes")["light"],        
+        }
+      }
+    ]
+  },
+  plugins: [require('daisyui')],
 }

@@ -1,10 +1,13 @@
 import { useState } from 'react'
-
+import NavBar from './components/NavBar'
+import AllRoutes from './components/AllRoutes'
 function App() {
-
-  return (
-    <>
-    </>
+  return (<>
+    <div className='bg-gradient-to-t from-[#ffecd2] to-[#fcb69f] h-[calc(100vh-4rem)] top-16 w-screen fixed -z-10'>
+    </div>
+      <NavBar />
+      <AllRoutes />
+  </>
   )
 }
 
